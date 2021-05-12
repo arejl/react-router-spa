@@ -1,0 +1,80 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.App {
+  min-height: 100vh;
+  margin: 0px;
+}
+
+.light {
+  background-color: #ffffff;
+}
+
+.light * {
+  color: #001529;
+}
+
+.light button {
+  background-color: #f759ab;
+}
+
+.dark {
+  background-color: #001529;
+}
+
+.dark * {
+  color: #ffffff;
+}
+
+.dark button {
+  background-color: #780650;
+}
+
+button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  padding: 100px 400px;
+}
+
+.container h1, .container h2, .container h3 {
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: bolder;
+}
+
+.container p {
+  text-align: justify;
+  line-height: 2rem;
+}
+/*# sourceMappingURL=App.css.map */

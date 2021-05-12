@@ -1,0 +1,68 @@
+$dark: #001529;
+$light:#ffffff;
+$primary:("light":#f759ab, "dark":#780650);
+$sizes:("normal":16px, "big":20px, "bigger":24px, "biggest":40px);
+
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+  font-size: map-get($map: $sizes, $key: "normal");
+}
+
+h2 {
+  font-size: map-get($map: $sizes, $key: "big");  
+}
+
+h1 {
+  font-size: map-get($map: $sizes, $key: "biggest");  
+}
+
+.App {
+  min-height: 100vh;
+  margin:0px;
+}
+
+.light {
+  background-color: $light;
+  *{color: $dark}
+  button {
+    background-color: map-get($map: $primary, $key: "light");
+  }
+}
+
+.dark {
+  background-color: $dark;
+  *{color: $light}
+  button {
+    background-color: map-get($map: $primary, $key: "dark");
+  }
+}
+
+button {
+  display: inline-flex;
+  align-items: center; 
+  justify-content: center;
+  height:50px;
+  border:none;
+  border-radius: 5px;
+  z-index: 1;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.container{
+  padding: 100px 400px;
+  h1, h2, h3 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bolder;
+  }
+  p {
+    text-align: justify;
+    line-height: 2rem;
+  }
+}
+
